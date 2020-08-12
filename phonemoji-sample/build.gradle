@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 
 android {
   compileSdkVersion buildConfig.compileSdk
@@ -16,13 +15,13 @@ android {
     multiDexEnabled true
   }
 
+  buildFeatures {
+    viewBinding = true
+  }
+
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
-  }
-
-  buildFeatures {
-    viewBinding = true
   }
 }
 

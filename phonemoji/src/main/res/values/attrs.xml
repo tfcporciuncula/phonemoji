@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <attr name="phonemoji_initialCountryCode" format="integer" />
+  <attr name="phonemoji_initialRegionCode" format="string" />
+
+  <declare-styleable name="PhonemojiTextInputLayout">
+    <attr name="phonemoji_flagSize" format="dimension" />
+    <attr name="phonemoji_showFlag" format="boolean" />
+  </declare-styleable>
+
+  <declare-styleable name="PhonemojiTextInputEditText">
+    <attr name="phonemoji_initialCountryCode" />
+    <attr name="phonemoji_initialRegionCode" />
+  </declare-styleable>
+
+  <declare-styleable name="PhonemojiFlagTextView">
+    <attr name="phonemoji_flagFor" format="reference" />
+    <attr name="phonemoji_initialCountryCode" />
+    <attr name="phonemoji_initialRegionCode" />
+  </declare-styleable>
+
+</resources>
