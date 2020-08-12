@@ -1,0 +1,39 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url 'https://plugins.gradle.org/m2/' }
+  }
+
+  apply from: rootProject.file('gradle/dependencies.gradle')
+
+  dependencies {
+    classpath "com.android.tools.build:gradle:$versions.agp"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+    classpath "org.jmailen.gradle:kotlinter-gradle:$versions.kotlinter"
+    classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
+  }
+}
+
+ext.buildConfig = [
+    'minSdk'    : 21,
+    'compileSdk': 30,
+    'targetSdk' : 30,
+    'buildTools': '29.0.3'
+]
+
+allprojects {
+  repositories {
+    mavenCentral()
+    google()
+    jcenter()
+  }
+
+  apply from: rootProject.file('gradle/ktlint.gradle')
+  apply from: rootProject.file('gradle/detekt.gradle')
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
