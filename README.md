@@ -74,7 +74,7 @@ If you don't want to work with a `TextInputLayout`, or if you don't want to rend
   <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
     android:id="@+id/phonemojiTextInputEditText"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     app:phonemoji_initialRegionCode="BR"
     />
 
