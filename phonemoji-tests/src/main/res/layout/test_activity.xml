@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  >
+
+  <com.tfcporciuncula.phonemoji.PhonemojiFlagTextView
+    android:id="@+id/flagTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:phonemoji_flagFor="@id/plainEditText"
+    />
+
+  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+    android:id="@+id/plainEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp"
+    />
+
+  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+    android:id="@+id/editTextWithInitialRegionCodeDE"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp"
+    app:phonemoji_initialRegionCode="DE"
+    />
+
+  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+    android:id="@+id/editTextWithInitialCountryCode55"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp"
+    app:phonemoji_initialCountryCode="55"
+    />
+
+  <com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+    android:id="@+id/textInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp"
+    >
+
+    <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+      android:id="@+id/editTextWithinTextInputLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+
+  <com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+    android:id="@+id/textInputLayoutWithNoFlag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp"
+    app:phonemoji_showFlag="false"
+    >
+
+    <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+  </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+
+</LinearLayout>

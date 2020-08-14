@@ -1,0 +1,15 @@
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.tfcporciuncula.phonemoji.tests"
+  >
+
+  <application
+    android:label="Phonemoji Tests"
+    android:theme="@style/Theme.AppCompat.Light"
+    >
+
+    <activity android:name=".TestActivity" />
+
+  </application>
+
+</manifest>

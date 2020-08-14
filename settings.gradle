@@ -1,4 +1,5 @@
 include ':phonemoji'
+include ':phonemoji-tests'
 include ':phonemoji-sample'
 
 rootProject.name = "phonemoji-root"

@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+  compileSdkVersion buildConfig.compileSdk
+  buildToolsVersion buildConfig.buildTools
+
+  defaultConfig {
+    minSdkVersion buildConfig.minSdk
+    targetSdkVersion buildConfig.targetSdk
+
+    testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+  }
+
+  kotlinOptions {
+    jvmTarget = JavaVersion.VERSION_1_8
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+dependencies {
+  implementation project(':phonemoji')
+  implementation deps.kotlin.stdlib
+
+  androidTestImplementation deps.androidx.test.coreKtx
+  androidTestImplementation deps.androidx.test.espresso
+  androidTestImplementation deps.androidx.test.junitKtx
+  androidTestImplementation deps.truth
+}
