@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatTextView
  * Displays an emoji flag based on the input of an independent [PhonemojiTextInputEditText] referenced by the
  * `phonemoji_flagFor` attribute.
  */
-class PhonemojiFlagTextView : AppCompatTextView {
+open class PhonemojiFlagTextView : AppCompatTextView {
 
   @IdRes private var editTextResId = -1
 
