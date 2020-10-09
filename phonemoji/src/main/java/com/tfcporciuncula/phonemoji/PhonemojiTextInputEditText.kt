@@ -17,7 +17,7 @@ import java.util.Locale
  * a valid country code. The initial country code can also be set with the attributes `phonemoji_initialRegionCode` and
  * `phonemoji_initialCountryCode` (the latter takes precedence) or through [setRegionCode] and [setCountryCode].
  */
-class PhonemojiTextInputEditText : TextInputEditText {
+open class PhonemojiTextInputEditText : TextInputEditText {
 
   private val phoneNumberUtil = PhoneNumberUtilInstanceProvider.get()
 
