@@ -10,20 +10,20 @@ import com.tfcporciuncula.phonemoji.internal.TextDrawable
  *
  * The flag visibility and size can be set with the attributes `phonemoji_showFlag` and `phonemoji_flagSize`.
  */
-class PhonemojiTextInputLayout : TextInputLayout {
+public class PhonemojiTextInputLayout : TextInputLayout {
 
   private var showFlag = true
   private var flagSize = 0f
 
-  constructor(context: Context) : super(context) {
+  public constructor(context: Context) : super(context) {
     init(null)
   }
 
-  constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
+  public constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
     init(attrs)
   }
 
-  constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
+  public constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
     init(attrs)
   }
 
