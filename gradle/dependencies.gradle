@@ -10,7 +10,7 @@ ext.versions = [
         ],
     ],
     'detekt'               : '1.10.0',
-    'kotlin'               : '1.3.72',
+    'kotlin'               : '1.4.10',
     'kotlinter'            : '2.4.1',
     'libphonenumberAndroid': '8.12.7',
     'material'             : '1.2.0',
@@ -18,9 +18,6 @@ ext.versions = [
 ]
 
 ext.deps = [
-    'kotlin'               : [
-        'stdlib': "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin",
-    ],
     'androidx'             : [
         'constraintLayout': "androidx.constraintlayout:constraintlayout:$versions.androidx.constraintLayout",
         'startup'         : "androidx.startup:startup-runtime:$versions.androidx.startup",

@@ -16,7 +16,6 @@ android {
 }
 
 dependencies {
-  implementation deps.kotlin.stdlib
   implementation deps.androidx.startup
   api deps.material
   api deps.libphonenumberAndroid
