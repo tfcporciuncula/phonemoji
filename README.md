@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.github.tfcporciuncula:phonemoji:1.0.1'
+  implementation 'com.github.tfcporciuncula:phonemoji:1.1.0'
 }
 ```
 
