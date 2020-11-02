@@ -12,7 +12,7 @@ ext.versions = [
     'detekt'               : '1.10.0',
     'kotlin'               : '1.4.10',
     'kotlinter'            : '2.4.1',
-    'libphonenumberAndroid': '8.12.7',
+    'libphonenumberAndroid': '8.12.12',
     'material'             : '1.2.0',
     'truth'                : '1.0.1',
 ]
