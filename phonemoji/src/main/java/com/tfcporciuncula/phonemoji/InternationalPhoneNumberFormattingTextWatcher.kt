@@ -44,7 +44,7 @@ class InternationalPhoneNumberFormattingTextWatcher @JvmOverloads constructor(
     if (!s.startsWith("+")) {
       // Always keep a '+' in the beginning.
       selfChange = true
-      s.replace(0, s.length, "$+${s.toString().replaceFirst("+", "")}")
+      s.replace(0, s.length, "+${s.toString().replaceFirst("+", "")}")
       Selection.setSelection(s, s.length)
       selfChange = false
     }
