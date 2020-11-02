@@ -2,7 +2,7 @@ ext.versions = [
     'agp'                  : '4.1.0',
     'androidx'             : [
         'constraintLayout': '2.0.0-rc1',
-        'startup'         : '1.0.0-alpha02',
+        'startup'         : '1.0.0',
         'test'            : [
             'coreKtx' : '1.3.0-rc03',
             'espresso': '3.3.0-rc03',
