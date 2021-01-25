@@ -67,4 +67,29 @@
 
   </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
 
+  <com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+    android:id="@+id/textInputLayoutWithInitialInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp"
+    >
+
+    <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+      android:id="@+id/editTextWithInitialInput"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="32dp"
+      app:phonemoji_initialCountryCode="41"
+      />
+
+  </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+
+  <com.tfcporciuncula.phonemoji.PhonemojiFlagTextView
+    android:id="@+id/flagTextViewForEditTextWithInitialInput"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="32dp"
+    app:phonemoji_flagFor="@id/editTextWithInitialInput"
+    />
+
 </LinearLayout>

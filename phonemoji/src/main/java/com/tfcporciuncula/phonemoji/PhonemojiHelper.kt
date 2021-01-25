@@ -21,6 +21,10 @@ object PhonemojiHelper {
    */
   fun watchPhoneNumber(editText: PhonemojiTextInputEditText, onCountryChanged: (String) -> Unit) {
     var currentCountryCode = editText.initialCountryCode
+    runCatching {
+      currentCountryCode = phoneNumberUtil.parse(editText.text, null).countryCode
+    }
+
     onCountryChanged(regionCodeToEmoji(phoneNumberUtil.getRegionCodeForCountryCode(currentCountryCode)))
 
     editText.addTextChangedListener(

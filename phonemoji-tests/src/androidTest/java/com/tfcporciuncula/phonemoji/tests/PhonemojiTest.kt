@@ -38,6 +38,7 @@ class PhonemojiTest {
     verifyInitialRegionCodeAttribute()
     verifyInitialCountryCodeAttribute()
     verifyFlagText()
+    verifyInitialInputIsFormatted()
     verifyTextInputLayoutIconPresence(scenario)
   }
 
@@ -85,6 +86,11 @@ class PhonemojiTest {
     onView(withId(R.id.flagTextView)).check(matches(withText("🇺🇸")))
     editText.perform(replaceText("5548"))
     onView(withId(R.id.flagTextView)).check(matches(withText("🇧🇷")))
+  }
+
+  private fun verifyInitialInputIsFormatted() {
+    onView(withId(R.id.editTextWithInitialInput)).check(matches(withText("+49 176")))
+    onView(withId(R.id.flagTextViewForEditTextWithInitialInput)).check(matches(withText("🇩🇪")))
   }
 
   private fun verifyTextInputLayoutIconPresence(scenario: ActivityScenario<TestActivity>) {
