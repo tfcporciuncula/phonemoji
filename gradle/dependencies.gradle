@@ -1,5 +1,5 @@
 ext.versions = [
-    'agp'                  : '4.1.0',
+    'agp'                  : '4.1.2',
     'androidx'             : [
         'constraintLayout': '2.0.4',
         'startup'         : '1.0.0',
@@ -9,12 +9,12 @@ ext.versions = [
             'junitKtx': '1.1.2',
         ],
     ],
-    'detekt'               : '1.14.0',
-    'kotlin'               : '1.4.10',
-    'kotlinter'            : '3.2.0',
-    'libphonenumberAndroid': '8.12.12',
+    'detekt'               : '1.15.0',
+    'kotlin'               : '1.4.21',
+    'kotlinter'            : '3.3.0',
+    'libphonenumberAndroid': '8.12.16',
     'material'             : '1.2.1',
-    'truth'                : '1.1',
+    'truth'                : '1.1.2',
 ]
 
 ext.deps = [
