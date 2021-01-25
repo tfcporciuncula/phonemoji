@@ -76,6 +76,7 @@ open class PhonemojiTextInputEditText : TextInputEditText {
    * @param countryCode The country calling code for a specific region (e.g. `1` for the US, `49` for Germany).
    */
   fun setCountryCode(countryCode: Int) {
+    setText("")
     val text = "+$countryCode"
     setText(text)
     // Ensure selection starts after the country code when we get focus the first time.
