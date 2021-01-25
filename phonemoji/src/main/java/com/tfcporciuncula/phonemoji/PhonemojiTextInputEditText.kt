@@ -79,8 +79,7 @@ open class PhonemojiTextInputEditText : TextInputEditText {
     setText("")
     val text = "+$countryCode"
     setText(text)
-    // Ensure selection starts after the country code when we get focus the first time.
-    post { setSelection(text.length) }
+    setSelection(text.length)
   }
 
   /**
