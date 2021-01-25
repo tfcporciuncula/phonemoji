@@ -84,3 +84,17 @@ If you don't want to work with a `TextInputLayout`, or if you don't want to rend
 ![](ex2.png)
 
 🙆‍♂️
+
+## Data binding
+
+If you're planning to use data binding, don't use the `text` property directly like this:
+
+```
+android:text="@{user.phoneNumber}"
+```
+
+Instead, use `internationalPhoneNumber` to make sure the input will always be formatted properly:
+
+```
+internationalPhoneNumber="@{user.phoneNumber}"
+```
