@@ -1,4 +1,4 @@
-[![Release](https://jitpack.io/v/tfcporciuncula/phonemoji.svg)](https://jitpack.io/#tfcporciuncula/phonemoji)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.fredporciuncula/phonemoji/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.fredporciuncula/phonemoji)
 [![Build Status](https://github.com/tfcporciuncula/phonemoji/workflows/CI/badge.svg)](https://github.com/tfcporciuncula/phonemoji/actions?query=workflow%3ACI)
 [![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
 
