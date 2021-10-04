@@ -20,11 +20,11 @@ Phonemoji provides a flexible text input field implementation that formats inter
 
 ```groovy
 repositories {
-  maven { url "https://jitpack.io" }
+  mavenCentral()
 }
 
 dependencies {
-  implementation 'com.github.tfcporciuncula:phonemoji:1.2.0'
+  implementation 'com.fredporciuncula:phonemoji:1.2.0'
 }
 ```
 

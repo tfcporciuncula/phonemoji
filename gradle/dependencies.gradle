@@ -10,6 +10,7 @@ ext.versions = [
         ],
     ],
     'detekt'               : '1.18.1',
+    'gradleMavenPublish'   : '0.18.0',
     'kotlin'               : '1.5.30',
     'kotlinter'            : '3.6.0',
     'libphonenumberAndroid': '8.12.33',

@@ -12,6 +12,7 @@ buildscript {
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
     classpath "org.jmailen.gradle:kotlinter-gradle:$versions.kotlinter"
     classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
+    classpath "com.vanniktech:gradle-maven-publish-plugin:$versions.gradleMavenPublish"
   }
 }
 
