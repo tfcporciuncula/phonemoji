@@ -5,7 +5,7 @@ android {
   compileSdkVersion buildConfig.compileSdk
 
   defaultConfig {
-    applicationId 'com.tfcporciuncula.phonemoji.sample'
+    applicationId 'com.fredporciuncula.phonemoji.sample'
     minSdkVersion buildConfig.minSdk
     targetSdkVersion buildConfig.targetSdk
     versionCode 1

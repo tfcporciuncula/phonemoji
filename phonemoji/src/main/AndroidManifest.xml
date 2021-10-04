@@ -1,7 +1,7 @@
 <manifest
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
-  package="com.tfcporciuncula.phonemoji"
+  package="com.fredporciuncula.phonemoji"
   >
 
   <application>
@@ -14,7 +14,7 @@
       >
 
       <meta-data
-        android:name="com.tfcporciuncula.phonemoji.internal.PhoneNumberUtilInitializer"
+        android:name="com.fredporciuncula.phonemoji.internal.PhoneNumberUtilInitializer"
         android:value="androidx.startup"
         />
 

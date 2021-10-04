@@ -1,4 +1,4 @@
-package com.tfcporciuncula.phonemoji.internal
+package com.fredporciuncula.phonemoji.internal
 
 import android.content.Context
 import androidx.startup.Initializer

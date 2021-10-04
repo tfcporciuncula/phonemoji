@@ -33,19 +33,19 @@ dependencies {
 The library offers a [`TextInputEditText`](https://developer.android.com/reference/com/google/android/material/textfield/TextInputEditText) and a [`TextInputLayout`](https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout) implementation. When you put them together, the `TextInputLayout` renders the flag as a [`startIconDrawable`](https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout#setStartIconDrawable(android.graphics.drawable.Drawable)) based on the `TextInputEditText` input:
 
 ```xml
-<com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+<com.fredporciuncula.phonemoji.PhonemojiTextInputLayout
   style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:hint="@string/phone_number"
   >
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     />
 
-</com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+</com.fredporciuncula.phonemoji.PhonemojiTextInputLayout>
 ```
 
 ![](ex1.png)
@@ -63,7 +63,7 @@ If you don't want to work with a `TextInputLayout`, or if you don't want to rend
   android:orientation="horizontal"
   >
 
-  <com.tfcporciuncula.phonemoji.PhonemojiFlagTextView
+  <com.fredporciuncula.phonemoji.PhonemojiFlagTextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:gravity="center"
@@ -71,7 +71,7 @@ If you don't want to work with a `TextInputLayout`, or if you don't want to rend
     app:phonemoji_flagFor="@id/phonemojiTextInputEditText"
     />
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
     android:id="@+id/phonemojiTextInputEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

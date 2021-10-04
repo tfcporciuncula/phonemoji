@@ -1,8 +1,8 @@
-package com.tfcporciuncula.phonemoji.tests
+package com.fredporciuncula.phonemoji.tests
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+import com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
 
 class TestActivity : AppCompatActivity() {
 

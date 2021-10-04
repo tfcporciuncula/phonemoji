@@ -7,21 +7,21 @@
   android:orientation="vertical"
   >
 
-  <com.tfcporciuncula.phonemoji.PhonemojiFlagTextView
+  <com.fredporciuncula.phonemoji.PhonemojiFlagTextView
     android:id="@+id/flagTextView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:phonemoji_flagFor="@id/plainEditText"
     />
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
     android:id="@+id/plainEditText"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="32dp"
     />
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
     android:id="@+id/editTextWithInitialRegionCodeDE"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
     app:phonemoji_initialRegionCode="DE"
     />
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
     android:id="@+id/editTextWithInitialCountryCode55"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -37,22 +37,22 @@
     app:phonemoji_initialCountryCode="55"
     />
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputLayout
     android:id="@+id/textInputLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="32dp"
     >
 
-    <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+    <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
       android:id="@+id/editTextWithinTextInputLayout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       />
 
-  </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+  </com.fredporciuncula.phonemoji.PhonemojiTextInputLayout>
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputLayout
     android:id="@+id/textInputLayoutWithNoFlag"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -60,21 +60,21 @@
     app:phonemoji_showFlag="false"
     >
 
-    <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+    <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       />
 
-  </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+  </com.fredporciuncula.phonemoji.PhonemojiTextInputLayout>
 
-  <com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout
+  <com.fredporciuncula.phonemoji.PhonemojiTextInputLayout
     android:id="@+id/textInputLayoutWithInitialInput"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="32dp"
     >
 
-    <com.tfcporciuncula.phonemoji.PhonemojiTextInputEditText
+    <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
       android:id="@+id/editTextWithInitialInput"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -82,9 +82,9 @@
       app:phonemoji_initialCountryCode="41"
       />
 
-  </com.tfcporciuncula.phonemoji.PhonemojiTextInputLayout>
+  </com.fredporciuncula.phonemoji.PhonemojiTextInputLayout>
 
-  <com.tfcporciuncula.phonemoji.PhonemojiFlagTextView
+  <com.fredporciuncula.phonemoji.PhonemojiFlagTextView
     android:id="@+id/flagTextViewForEditTextWithInitialInput"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

@@ -1,9 +1,9 @@
-package com.tfcporciuncula.phonemoji
+package com.fredporciuncula.phonemoji
 
 import android.content.Context
 import android.util.AttributeSet
 import com.google.android.material.textfield.TextInputLayout
-import com.tfcporciuncula.phonemoji.internal.TextDrawable
+import com.fredporciuncula.phonemoji.internal.TextDrawable
 
 /**
  * Works with a [PhonemojiTextInputEditText] child and renders an emoji flag as a start icon based on its input.

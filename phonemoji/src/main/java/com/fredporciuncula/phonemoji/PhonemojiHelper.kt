@@ -1,8 +1,8 @@
-package com.tfcporciuncula.phonemoji
+package com.fredporciuncula.phonemoji
 
 import android.text.Editable
 import android.text.TextWatcher
-import com.tfcporciuncula.phonemoji.internal.PhoneNumberUtilInstanceProvider
+import com.fredporciuncula.phonemoji.internal.PhoneNumberUtilInstanceProvider
 
 object PhonemojiHelper {
 

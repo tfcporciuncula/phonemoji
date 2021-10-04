@@ -1,10 +1,10 @@
-package com.tfcporciuncula.phonemoji.sample
+package com.fredporciuncula.phonemoji.sample
 
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
-import com.tfcporciuncula.phonemoji.sample.databinding.SampleActivityBinding
+import com.fredporciuncula.phonemoji.sample.databinding.SampleActivityBinding
 
 class SampleActivity : AppCompatActivity() {
 

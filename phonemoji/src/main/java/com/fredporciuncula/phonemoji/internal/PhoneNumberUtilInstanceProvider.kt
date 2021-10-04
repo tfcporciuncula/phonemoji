@@ -1,4 +1,4 @@
-package com.tfcporciuncula.phonemoji.internal
+package com.fredporciuncula.phonemoji.internal
 
 import io.michaelrocks.libphonenumber.android.PhoneNumberUtil
 

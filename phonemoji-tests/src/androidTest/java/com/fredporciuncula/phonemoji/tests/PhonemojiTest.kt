@@ -1,4 +1,4 @@
-package com.tfcporciuncula.phonemoji.tests
+package com.fredporciuncula.phonemoji.tests
 
 import android.content.Context
 import android.telephony.TelephonyManager

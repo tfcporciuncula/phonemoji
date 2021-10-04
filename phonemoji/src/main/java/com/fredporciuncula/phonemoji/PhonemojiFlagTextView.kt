@@ -1,4 +1,4 @@
-package com.tfcporciuncula.phonemoji
+package com.fredporciuncula.phonemoji
 
 import android.content.Context
 import android.util.AttributeSet

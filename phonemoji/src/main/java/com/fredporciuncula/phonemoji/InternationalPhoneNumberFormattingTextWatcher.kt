@@ -1,11 +1,11 @@
-package com.tfcporciuncula.phonemoji
+package com.fredporciuncula.phonemoji
 
 import android.telephony.PhoneNumberUtils
 import android.text.Editable
 import android.text.Selection
 import android.text.TextWatcher
-import com.tfcporciuncula.phonemoji.internal.PhoneNumberUtilInstanceProvider
-import com.tfcporciuncula.phonemoji.internal.TtsSpanHelper
+import com.fredporciuncula.phonemoji.internal.PhoneNumberUtilInstanceProvider
+import com.fredporciuncula.phonemoji.internal.TtsSpanHelper
 import java.util.Locale
 
 /**

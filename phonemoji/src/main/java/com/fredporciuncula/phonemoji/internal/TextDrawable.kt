@@ -1,11 +1,11 @@
-package com.tfcporciuncula.phonemoji.internal
+package com.fredporciuncula.phonemoji.internal
 
 import android.graphics.Canvas
 import android.graphics.ColorFilter
 import android.graphics.Paint
 import android.graphics.PixelFormat
 import android.graphics.drawable.Drawable
-import com.tfcporciuncula.phonemoji.PhonemojiHelper
+import com.fredporciuncula.phonemoji.PhonemojiHelper
 
 /**
  * A [Drawable] implementation that draws text so we can render the flag emoji as an icon drawable.
