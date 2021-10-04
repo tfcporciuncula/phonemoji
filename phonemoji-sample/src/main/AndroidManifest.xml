@@ -12,6 +12,7 @@
     <activity
       android:name=".SampleActivity"
       android:windowSoftInputMode="adjustResize|stateAlwaysVisible"
+      android:exported="true"
       >
 
       <intent-filter>

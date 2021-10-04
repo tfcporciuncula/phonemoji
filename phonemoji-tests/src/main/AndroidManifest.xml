@@ -8,7 +8,10 @@
     android:theme="@style/Theme.AppCompat.Light"
     >
 
-    <activity android:name=".TestActivity" />
+    <activity
+      android:name=".TestActivity"
+      android:exported="true"
+      />
 
   </application>
 

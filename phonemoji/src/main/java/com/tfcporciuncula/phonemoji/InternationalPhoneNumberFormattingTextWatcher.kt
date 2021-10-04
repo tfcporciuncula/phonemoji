@@ -85,7 +85,7 @@ class InternationalPhoneNumberFormattingTextWatcher @JvmOverloads constructor(
     for (i in 0 until len) {
       val c = s[i]
       if (PhoneNumberUtils.isNonSeparator(c)) {
-        if (lastNonSeparator.toInt() != 0) {
+        if (lastNonSeparator.code != 0) {
           formatted = getFormattedNumber(lastNonSeparator, hasCursor)
           hasCursor = false
         }
@@ -93,7 +93,7 @@ class InternationalPhoneNumberFormattingTextWatcher @JvmOverloads constructor(
       }
       if (i == curIndex) hasCursor = true
     }
-    if (lastNonSeparator.toInt() != 0) formatted = getFormattedNumber(lastNonSeparator, hasCursor)
+    if (lastNonSeparator.code != 0) formatted = getFormattedNumber(lastNonSeparator, hasCursor)
     return formatted
   }
 

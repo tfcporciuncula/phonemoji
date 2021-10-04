@@ -48,7 +48,7 @@ open class PhonemojiTextInputEditText : TextInputEditText {
         try {
           initialCountryCode = getInt(R.styleable.PhonemojiTextInputEditText_phonemoji_initialCountryCode, -1)
           val initialRegionCode = getString(R.styleable.PhonemojiTextInputEditText_phonemoji_initialRegionCode)
-            ?.toUpperCase(Locale.ROOT)
+            ?.uppercase()
 
           initialCountryCode = when {
             initialCountryCode != -1 -> initialCountryCode
@@ -68,7 +68,7 @@ open class PhonemojiTextInputEditText : TextInputEditText {
       ?: phoneNumberUtil.getCountryCodeForRegion(Locale.getDefault().country)
 
   private fun networkCountry() =
-    (context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager).networkCountryIso.toUpperCase(Locale.ROOT)
+    (context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager).networkCountryIso.uppercase()
 
   /**
    * Clears the text and sets it as '+XX', where XX is the country code provided.
@@ -88,7 +88,7 @@ open class PhonemojiTextInputEditText : TextInputEditText {
    * @param regionCode The region code that matches a specific country calling code (e.g. `US` for 1, `DE` for 49).
    */
   fun setRegionCode(regionCode: String) {
-    setCountryCode(phoneNumberUtil.getCountryCodeForRegion(regionCode.toUpperCase(Locale.ROOT)))
+    setCountryCode(phoneNumberUtil.getCountryCodeForRegion(regionCode.uppercase()))
   }
 
   /**
