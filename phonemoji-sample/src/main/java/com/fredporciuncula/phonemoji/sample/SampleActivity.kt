@@ -3,8 +3,8 @@ package com.fredporciuncula.phonemoji.sample
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.textfield.TextInputEditText
 import com.fredporciuncula.phonemoji.sample.databinding.SampleActivityBinding
+import com.google.android.material.textfield.TextInputEditText
 
 class SampleActivity : AppCompatActivity() {
 
