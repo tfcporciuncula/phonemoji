@@ -98,3 +98,7 @@ Instead, use `internationalPhoneNumber` to make sure the input will always be fo
 ```
 internationalPhoneNumber="@{user.phoneNumber}"
 ```
+
+## Startup
+
+The library initializes itself using the [App Startup library](https://developer.android.com/topic/libraries/app-startup). In general, this isn't important for consumers, and it just means you can use the library without worrying about any initialization logic. But it also means the library depends on App Startup in order to work properly, so if you disable it for any reason, the library will crash.
