@@ -1,5 +1,5 @@
 ext.versions = [
-    'agp'                  : '7.2.1',
+    'agp'                  : '7.2.2',
     'androidx'             : [
         'constraintLayout': '2.1.1',
         'startup'         : '1.1.1',
@@ -11,7 +11,7 @@ ext.versions = [
     ],
     'detekt'               : '1.18.1',
     'gradleMavenPublish'   : '0.18.0',
-    'kotlin'               : '1.7.0',
+    'kotlin'               : '1.7.10',
     'kotlinter'            : '3.7.0',
     'libphonenumberAndroid': '8.12.52',
     'material'             : '1.6.1',
