@@ -19,7 +19,6 @@ import io.michaelrocks.libphonenumber.android.PhoneNumberUtil
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.Test
 import org.junit.runner.RunWith
-import java.util.Locale
 
 @RunWith(AndroidJUnit4::class)
 class PhonemojiTest {
@@ -103,5 +102,5 @@ class PhonemojiTest {
   private fun networkCountryCode() = phoneNumberUtil.getCountryCodeForRegion(networkCountry())
 
   private fun networkCountry() =
-    (context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager).networkCountryIso.toUpperCase(Locale.ROOT)
+    (context.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager).networkCountryIso.uppercase()
 }
