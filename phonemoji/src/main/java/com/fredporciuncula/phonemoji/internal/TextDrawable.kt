@@ -36,8 +36,7 @@ class TextDrawable(private val text: String, private val size: Float) : Drawable
     paint.colorFilter = colorFilter
   }
 
-  @Deprecated("Deprecated in Java",
-    ReplaceWith("PixelFormat.TRANSLUCENT", "android.graphics.PixelFormat")
-  )
+  @Suppress("DeprecatedCallableAddReplaceWith")
+  @Deprecated("This method is no longer used in graphics optimizations")
   override fun getOpacity() = PixelFormat.TRANSLUCENT
 }
