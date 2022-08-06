@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 
 android {
   compileSdkVersion buildConfig.compileSdk
+  namespace 'com.fredporciuncula.phonemoji.tests'
 
   defaultConfig {
     minSdkVersion buildConfig.minSdk
@@ -19,7 +20,6 @@ android {
     sourceCompatibility JavaVersion.VERSION_11
     targetCompatibility JavaVersion.VERSION_11
   }
-    namespace 'com.fredporciuncula.phonemoji.tests'
 }
 
 dependencies {
