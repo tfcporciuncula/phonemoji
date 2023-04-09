@@ -10,5 +10,5 @@ internal object PhoneNumberUtilInstanceProvider {
     this.phoneNumberUtil = phoneNumberUtil
   }
 
-  fun get() = phoneNumberUtil ?: throw IllegalStateException("PhoneNumberUtil instance hasn't been initialized.")
+  fun get() = checkNotNull(phoneNumberUtil) { "PhoneNumberUtil instance hasn't been initialized." }
 }

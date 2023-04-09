@@ -1,35 +1,23 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+plugins {
+  alias(libs.plugins.android.application)
+  alias(libs.plugins.kotlin.android)
+}
 
 android {
-  compileSdkVersion buildConfig.compileSdk
   namespace 'com.fredporciuncula.phonemoji.sample'
 
   defaultConfig {
     applicationId 'com.fredporciuncula.phonemoji.sample'
-    minSdkVersion buildConfig.minSdk
-    targetSdkVersion buildConfig.targetSdk
     versionCode 1
     versionName '1.0'
-
-    multiDexEnabled true
   }
 
   buildFeatures {
     viewBinding true
   }
-
-  kotlinOptions {
-    jvmTarget = JavaVersion.VERSION_11
-  }
-
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_11
-    targetCompatibility JavaVersion.VERSION_11
-  }
 }
 
 dependencies {
-  implementation project(':phonemoji')
-  implementation deps.androidx.constraintLayout
+  implementation projects.phonemoji
+  implementation libs.androidx.constraintLayout
 }

@@ -109,6 +109,6 @@ open class PhonemojiTextInputEditText : TextInputEditText {
   fun setInternationalPhoneNumber(phoneNumber: String) {
     setText("")
     setText(phoneNumber)
-    setSelection(text!!.length)
+    setSelection(checkNotNull(text).length)
   }
 }

@@ -1,7 +1,0 @@
-apply plugin: 'org.jmailen.kotlinter'
-
-kotlinter {
-  indentSize = 2
-  experimentalRules = true
-  disabledRules = ["indent"]
-}

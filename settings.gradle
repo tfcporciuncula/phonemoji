@@ -1,5 +1,23 @@
+pluginManagement {
+  repositories {
+    mavenCentral()
+    google()
+    gradlePluginPortal()
+  }
+}
+
+dependencyResolutionManagement {
+  repositories {
+    mavenCentral()
+    google()
+  }
+}
+
+// https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:type-safe-project-accessors
+enableFeaturePreview('TYPESAFE_PROJECT_ACCESSORS')
+
+rootProject.name = "phonemoji-root"
+
 include ':phonemoji'
 include ':phonemoji-tests'
 include ':phonemoji-sample'
-
-rootProject.name = "phonemoji-root"

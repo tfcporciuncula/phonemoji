@@ -1,23 +1,15 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
-apply plugin: 'com.vanniktech.maven.publish'
+plugins {
+  alias(libs.plugins.android.library)
+  alias(libs.plugins.kotlin.android)
+  alias(libs.plugins.mavenPublish)
+}
 
 android {
-  compileSdkVersion buildConfig.compileSdk
   namespace 'com.fredporciuncula.phonemoji'
-
-  defaultConfig {
-    minSdkVersion buildConfig.minSdk
-  }
-
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_11
-    targetCompatibility JavaVersion.VERSION_11
-  }
 }
 
 dependencies {
-  implementation deps.androidx.startup
-  api deps.material
-  api deps.libphonenumberAndroid
+  implementation libs.androidx.startup
+  api libs.material
+  api libs.libphonenumberAndroid
 }

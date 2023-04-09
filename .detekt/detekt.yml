@@ -3,8 +3,26 @@ complexity:
     active: true
     threshold: 5
 
+empty-blocks:
+  EmptyClassBlock:
+    active: false # Overlaps with NoEmptyClassBody from ktlint
+
+formatting:
+  Indentation:
+    indentSize: 2
+
+naming:
+  MatchingDeclarationName:
+    active: false # Overlaps with Filename from ktlint
+
 style:
   MagicNumber:
     active: false
+  MaxLineLength:
+    active: false # Overlaps with MaximumLineLength from ktlint
+  ModifierOrder:
+    active: false # Overlaps with ModifierOrdering from ktlint
+  NewLineAtEndOfFile:
+    active: false # Overlaps with FinalNewline from ktlint
   ReturnCount:
     active: false

@@ -23,12 +23,9 @@ jobs:
         with:
           path: ~/.gradle/caches
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}-${{ hashFiles('**/gradle/wrapper/gradle-wrapper.properties') }}
-
-      - name: Ktlint
-        run: ./gradlew lintKotlin
         
       - name: Detekt
-        run: ./gradlew detekt
+        run: ./gradlew detektMain
 
       - name: Instrumentation Tests
         uses: ReactiveCircus/android-emulator-runner@v2
