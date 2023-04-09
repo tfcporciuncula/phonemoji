@@ -3,10 +3,9 @@ plugins {
   alias(libs.plugins.android.library) apply false
   alias(libs.plugins.kotlin.android) apply false
   alias(libs.plugins.detekt) apply false
-//  classpath "com.vanniktech:gradle-maven-publish-plugin:$versions.gradleMavenPublish"
 }
 
-allprojects {
+subprojects {
   apply from: rootProject.file('gradle/android.gradle')
   apply from: rootProject.file('gradle/detekt.gradle')
 }
