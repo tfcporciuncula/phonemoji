@@ -2,10 +2,12 @@ package com.fredporciuncula.phonemoji.tests
 
 import android.content.Context
 import android.telephony.TelephonyManager
+import android.view.KeyEvent
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.launchActivity
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.clearText
+import androidx.test.espresso.action.ViewActions.pressKey
 import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.action.ViewActions.typeText
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -39,6 +41,7 @@ class PhonemojiTest {
     verifyFlagText()
     verifyInitialInputIsFormatted()
     verifyTextInputLayoutIconPresence(scenario)
+    verifyCountryIsPickedUpAfterLastSpaceIsRemoved()
   }
 
   private fun verifyPlainEditTextStartsWithNetworkCountryCode() {
@@ -97,6 +100,15 @@ class PhonemojiTest {
       assertThat(it.findViewById<TextInputLayout>(R.id.textInputLayout).startIconDrawable).isNotNull()
       assertThat(it.findViewById<TextInputLayout>(R.id.textInputLayoutWithNoFlag).startIconDrawable).isNull()
     }
+  }
+
+  private fun verifyCountryIsPickedUpAfterLastSpaceIsRemoved() {
+    editText.perform(clearText())
+    editText.perform(replaceText("55"))
+    editText.perform(pressKey(KeyEvent.KEYCODE_FORWARD_DEL)) // delete the space at the end
+    editText.perform(pressKey(KeyEvent.KEYCODE_DEL)) // delete "5"
+    editText.perform(pressKey(KeyEvent.KEYCODE_4)) // type "4"
+    onView(withId(R.id.flagTextView)).check(matches(withText("🇦🇷")))
   }
 
   private fun networkCountryCode() = phoneNumberUtil.getCountryCodeForRegion(networkCountry())

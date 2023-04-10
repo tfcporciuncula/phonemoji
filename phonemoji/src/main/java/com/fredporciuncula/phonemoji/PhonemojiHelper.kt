@@ -30,22 +30,23 @@ object PhonemojiHelper {
     editText.addTextChangedListener(
       object : TextWatcher {
         override fun afterTextChanged(s: Editable) {
-          if (s.contains(" ")) { // First space is added when country code is identified.
-            // If we can't get the country code between '+' (thus index 1) and the first space, we give up.
-            val countryCode = runCatching { s.substring(1, s.indexOf(" ")).toInt() }.getOrNull() ?: return
+          // If we can't get the country code between '+' (thus start index 1) and the end of the string
+          // (or the first space, which is added when the country is identified), we give up.
+          val countryCode = runCatching {
+            s.substring(startIndex = 1, endIndex = if (s.contains(" ")) s.indexOf(' ') else s.length).toInt()
+          }.getOrNull() ?: return
 
-            // If it's the same as the current one, no need to bother.
-            if (currentCountryCode == countryCode) return
+          // If it's the same as the current one, no need to bother.
+          if (currentCountryCode == countryCode) return
 
-            // Otherwise, we get the region code for the country code, so we can translate it to a flag emoji.
-            val regionCode = phoneNumberUtil.getRegionCodeForCountryCode(countryCode)
+          // Otherwise, we get the region code for the country code, so we can translate it to a flag emoji.
+          val regionCode = phoneNumberUtil.getRegionCodeForCountryCode(countryCode)
 
-            // If we can't get a valid region code, we give up.
-            if (regionCode == UNKNOWN_REGION) return
+          // If we can't get a valid region code, we give up.
+          if (regionCode == UNKNOWN_REGION) return
 
-            currentCountryCode = countryCode
-            onCountryChanged(regionCodeToEmoji(regionCode))
-          }
+          currentCountryCode = countryCode
+          onCountryChanged(regionCodeToEmoji(regionCode))
         }
 
         override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) = Unit

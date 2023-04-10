@@ -57,7 +57,7 @@ class InternationalPhoneNumberFormattingTextWatcher @JvmOverloads constructor(
 
     val formatted = reformat(s, Selection.getSelectionEnd(s))
     formatted?.let {
-      val rememberedPos: Int = formatter.rememberedPosition
+      val rememberedPos = formatter.rememberedPosition
       selfChange = true
       s.replace(0, s.length, it)
       // The text could be changed by other TextWatcher after we changed it. If we found the
