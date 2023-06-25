@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.fredporciuncula:phonemoji:1.5.1'
+  implementation 'com.fredporciuncula:phonemoji:1.5.2'
 }
 ```
 
