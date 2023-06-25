@@ -5,6 +5,7 @@ import android.telephony.TelephonyManager
 import android.text.InputType
 import android.util.AttributeSet
 import com.fredporciuncula.phonemoji.internal.PhoneNumberUtilInstanceProvider
+import com.fredporciuncula.phonemoji.internal.unsyncLazy
 import com.google.android.material.textfield.TextInputEditText
 import java.util.Locale
 
@@ -19,7 +20,7 @@ import java.util.Locale
  */
 open class PhonemojiTextInputEditText : TextInputEditText {
 
-  private val phoneNumberUtil = PhoneNumberUtilInstanceProvider.get()
+  private val phoneNumberUtil by unsyncLazy { PhoneNumberUtilInstanceProvider.get() }
 
   var initialCountryCode = -1
     private set
@@ -37,8 +38,10 @@ open class PhonemojiTextInputEditText : TextInputEditText {
   }
 
   private fun init(attrs: AttributeSet?) {
-    setInitialCountryCode(attrs)
-    addTextChangedListener(InternationalPhoneNumberFormattingTextWatcher())
+    if (!isInEditMode) {
+      setInitialCountryCode(attrs)
+      addTextChangedListener(InternationalPhoneNumberFormattingTextWatcher())
+    }
     inputType = InputType.TYPE_CLASS_PHONE
   }
 

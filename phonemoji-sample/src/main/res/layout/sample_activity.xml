@@ -34,6 +34,7 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           app:phonemoji_initialRegionCode="BR"
+          tools:text="🇧🇷 +55"
           />
 
       </com.fredporciuncula.phonemoji.PhonemojiTextInputLayout>
@@ -53,6 +54,7 @@
           android:id="@+id/secondtextInputEditText"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
+          tools:text="🇺🇸 +1"
           />
 
       </com.fredporciuncula.phonemoji.PhonemojiTextInputLayout>
@@ -69,6 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/thirdTextInputLayout"
         app:phonemoji_flagFor="@id/thirdTextInputEditText"
+        tools:text="🇵🇹"
         />
 
       <com.fredporciuncula.phonemoji.PhonemojiTextInputLayout
@@ -91,6 +94,7 @@
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           app:phonemoji_initialRegionCode="PT"
+          tools:text="+351"
           />
 
       </com.fredporciuncula.phonemoji.PhonemojiTextInputLayout>
@@ -107,6 +111,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/firstParentlessTextInputEditText"
         app:phonemoji_flagFor="@id/firstParentlessTextInputEditText"
+        tools:text="🇺🇸 +1"
         />
 
       <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText
@@ -141,6 +146,7 @@
           android:gravity="center"
           android:textSize="16sp"
           app:phonemoji_flagFor="@id/secondParentlessTextInputEditText"
+          tools:text="🇯🇵 +81"
           />
 
         <com.fredporciuncula.phonemoji.PhonemojiTextInputEditText

@@ -39,7 +39,7 @@ open class PhonemojiFlagTextView : AppCompatTextView {
 
   override fun onAttachedToWindow() {
     super.onAttachedToWindow()
-    watchPhoneNumber()
+    if (!isInEditMode) watchPhoneNumber()
   }
 
   private fun watchPhoneNumber() {

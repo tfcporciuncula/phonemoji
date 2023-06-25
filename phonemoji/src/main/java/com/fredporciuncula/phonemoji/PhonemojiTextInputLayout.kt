@@ -43,7 +43,7 @@ open class PhonemojiTextInputLayout : TextInputLayout {
 
   override fun onAttachedToWindow() {
     super.onAttachedToWindow()
-    if (showFlag) watchPhoneNumber()
+    if (showFlag && !isInEditMode) watchPhoneNumber()
   }
 
   private fun watchPhoneNumber() {
